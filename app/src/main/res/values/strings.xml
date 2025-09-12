@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mytaxitravel</string>
+    <string name="title_activity_hime">Hime</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_viajes">Viajes</string>
+    <string name="title_activity_usuario">usuario</string>
+    <string name="title_activity_viaje_realizado">viajeRealizado</string>
+    <string name="title_activity_historial_viajes">historialViajes</string>
+</resources>

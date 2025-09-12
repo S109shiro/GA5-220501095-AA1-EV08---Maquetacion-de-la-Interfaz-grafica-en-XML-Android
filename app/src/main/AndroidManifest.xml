@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mytaxitravel">
+        <activity
+            android:name=".historialViajes"
+            android:exported="false"
+            android:label="@string/title_activity_historial_viajes" />
+        <activity
+            android:name=".viajeRealizado"
+            android:exported="false"
+            android:label="@string/title_activity_viaje_realizado" />
+        <activity
+            android:name=".usuario"
+            android:exported="false"
+            android:label="@string/title_activity_usuario" />
+        <activity
+            android:name=".Viajes"
+            android:exported="false"
+            android:label="@string/title_activity_viajes" />
+        <activity
+            android:name=".ui.Viajes"
+            android:exported="false"
+            android:label="@string/title_activity_viajes" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="@string/title_activity_hime" />
+        <activity
+            android:name=".MainActivity4_registro2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_Registro"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2_Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
