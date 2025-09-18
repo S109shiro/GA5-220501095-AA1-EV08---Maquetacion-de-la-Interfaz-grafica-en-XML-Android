@@ -6,8 +6,6 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 
-    <!-- Encabezado amarillo con borde curvo -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -32,8 +30,6 @@
 
     </LinearLayout>
 
-    <!-- Contenedor principal -->
-    <!-- BottomNavigation -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="806dp"

@@ -31,7 +31,6 @@
             android:tint="#FEBC2F"/>
     </LinearLayout>
 
-    <!-- Contenedor principal -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="801dp"

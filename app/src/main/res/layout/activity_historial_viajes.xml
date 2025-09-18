@@ -31,7 +31,7 @@
             android:tint="#FEBC2F"/>
     </LinearLayout>
 
-    <!-- Contenido scrollable -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="788dp"
