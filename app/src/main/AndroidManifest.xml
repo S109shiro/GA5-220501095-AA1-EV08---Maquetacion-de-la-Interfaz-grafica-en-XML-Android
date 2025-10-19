@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mytaxitravel">
         <activity
+            android:name=".calificacion_viaje"
+            android:exported="false" />
+        <activity
             android:name=".viaje_final"
             android:exported="false" />
         <activity

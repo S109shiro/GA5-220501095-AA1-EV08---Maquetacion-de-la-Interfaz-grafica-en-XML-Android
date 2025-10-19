@@ -171,11 +171,10 @@
     </LinearLayout>
 
 
-    <!-- BottomNavigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="67dp"
         android:layout_gravity="bottom"
         android:background="#2C2C2C"
         app:itemIconTint="@color/nav_item_colors"

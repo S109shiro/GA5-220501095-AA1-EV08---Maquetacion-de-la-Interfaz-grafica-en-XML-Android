@@ -3,8 +3,9 @@
 
     <item
         android:id="@+id/navigation_dashboard"
+        android:checkable="false"
+        android:enabled="true"
         android:icon="@drawable/baseline_directions_car_24"
-        android:checked="true"
         android:title="Viaja Ya" />
 
 
