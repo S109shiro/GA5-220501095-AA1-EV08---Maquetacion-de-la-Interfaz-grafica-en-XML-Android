@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mytaxitravel">
         <activity
+            android:name=".viaje_final"
+            android:exported="false" />
+        <activity
+            android:name=".olvide_contrasena2"
+            android:exported="false" />
+        <activity
+            android:name=".olvide_contrasena1"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.Olvidar_contrasena1"
+            android:exported="false"
+            android:label="@string/title_activity_olvidar_contrasena1" />
+        <activity
+            android:name=".ui.login.Olvide_contrasena1"
+            android:exported="false"
+            android:label="@string/title_activity_olvide_contrasena1" />
+        <activity
+            android:name=".ui.login.OlvideContrasena1"
+            android:exported="false"
+            android:label="@string/title_activity_olvide_contrasena1" />
+        <activity
             android:name=".historialViajes"
             android:exported="false"
             android:label="@string/title_activity_historial_viajes" />
