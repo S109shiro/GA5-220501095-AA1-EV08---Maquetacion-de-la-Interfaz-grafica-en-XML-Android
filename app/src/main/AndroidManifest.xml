@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mytaxitravel">
         <activity
+            android:name=".preguntas_frecuentes"
+            android:exported="false" />
+        <activity
             android:name=".soporte_usuario"
             android:exported="false" />
         <activity
