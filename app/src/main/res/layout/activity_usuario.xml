@@ -221,12 +221,14 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#2C2C2C"
-        app:itemIconTint="@color/nav_item_colors"
+        android:background="@color/banner"
+        app:itemIconSize="24dp"
         app:itemTextColor="@color/nav_item_colors"
-        app:menu="@menu/bottom_nav_menu3" >
+        app:itemIconTint="@color/nav_item_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" >
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 

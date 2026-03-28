@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="titlesBanner">#FEBC2F</color>
+    <color name="banner">#2C2C2C</color>
+    <color name="colorPrimary">#FEBC2F</color>
+    <color name="black">#000000</color>
+    <color name="colorButtons">#2C2C2C</color>
+    <color name="colorSecondButtons">#F2EEEE</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fontInputText">#F2EAFB</color>
 </resources>

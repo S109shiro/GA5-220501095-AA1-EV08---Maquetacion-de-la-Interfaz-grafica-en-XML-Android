@@ -295,6 +295,5 @@
         android:background="#2C2C2C"
         app:itemIconTint="@color/nav_item_colors"
         app:itemTextColor="@color/nav_item_colors"
-        app:menu="@menu/bottom_nav_menu3"
-        app:selectedItemId="@id/navigation_notifications"/>
+        app:menu="@menu/bottom_nav_menu" />
 </LinearLayout>

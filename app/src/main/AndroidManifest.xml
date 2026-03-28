@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -24,26 +23,11 @@
             android:name=".calificacion_viaje"
             android:exported="false" />
         <activity
-            android:name=".viaje_final"
-            android:exported="false" />
-        <activity
             android:name=".olvide_contrasena2"
             android:exported="false" />
         <activity
             android:name=".olvide_contrasena1"
             android:exported="false" />
-        <activity
-            android:name=".ui.login.Olvidar_contrasena1"
-            android:exported="false"
-            android:label="@string/title_activity_olvidar_contrasena1" />
-        <activity
-            android:name=".ui.login.Olvide_contrasena1"
-            android:exported="false"
-            android:label="@string/title_activity_olvide_contrasena1" />
-        <activity
-            android:name=".ui.login.OlvideContrasena1"
-            android:exported="false"
-            android:label="@string/title_activity_olvide_contrasena1" />
         <activity
             android:name=".historialViajes"
             android:exported="false"
@@ -53,15 +37,11 @@
             android:exported="false"
             android:label="@string/title_activity_viaje_realizado" />
         <activity
-            android:name=".usuario"
+            android:name=".Usuario"
             android:exported="false"
             android:label="@string/title_activity_usuario" />
         <activity
             android:name=".Viajes"
-            android:exported="false"
-            android:label="@string/title_activity_viajes" />
-        <activity
-            android:name=".ui.Viajes"
             android:exported="false"
             android:label="@string/title_activity_viajes" />
         <activity
@@ -75,7 +55,7 @@
             android:name=".MainActivity3_Registro"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2_Login"
+            android:name=".ActivityLogin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

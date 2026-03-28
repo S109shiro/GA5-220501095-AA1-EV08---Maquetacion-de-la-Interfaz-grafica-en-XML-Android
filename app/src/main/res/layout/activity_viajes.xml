@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E1E1E">
+    android:id="@+id/main">
 
     <ImageView
         android:id="@+id/imageView10"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="0dp"
         android:layout_width="match_parent"
-        android:layout_height="922dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/as" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:background="#2C2C2C"
+            android:background="@color/banner"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp">
 
@@ -31,7 +30,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="MY TAXI TRAVEL"
+                android:text="@string/my_taxi_travel"
                 android:textColor="#FEBC2F"
                 android:textStyle="bold"
                 android:textSize="16sp"/>
@@ -40,7 +39,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/baseline_directions_car_24"
-                android:tint="#FEBC2F"/>
+                app:tint="@color/colorPrimary" />
         </LinearLayout>
 
         <!-- Card Solicitud -->
@@ -48,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:background="#ffffff"
+            android:background="@color/white"
             android:orientation="vertical"
 
             android:padding="16dp">
@@ -58,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:text="Solicitud del viaje"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -67,9 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="8dp"
-                android:background="#F2EAFB"
-                android:backgroundTint="#EDE7F6"
-                android:clipToOutline="true"
+                android:background="@color/fontInputText"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingHorizontal="8dp">
@@ -78,21 +75,25 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/outline_article_24"
-                    android:tint="#2C2C2C" />
+                    app:tint="@color/black" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/etInicio"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:text="Inicio"
-                    android:textColor="#2C2C2C" />
+                    android:hint="Inicio"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/black"
+                    android:inputType="text" />
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/icons8_search"
-                    android:tint="#2C2C2C" />
+                    app:tint="@color/black" />
+
             </LinearLayout>
 
             <!-- Campo Destino -->
@@ -100,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
-                android:background="#F2EAFB"
+                android:background="@color/fontInputText"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingHorizontal="8dp">
@@ -109,31 +110,32 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/outline_article_24"
-                    android:tint="#2C2C2C" />
+                    app:tint="@color/black" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/etDestino"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:text="Destino"
-                    android:textColor="#2C2C2C" />
+                    android:hint="Destino"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/black"
+                    android:inputType="text" />
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/icons8_search"
-                    android:tint="#2C2C2C" />
+                    app:tint="@color/black" />
+
             </LinearLayout>
 
             <!-- Mapa preview -->
-
-            <!-- Estado -->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="226dp"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/bg_card_rounded"
                 android:scaleType="centerCrop"
                 android:src="@drawable/map_preview" />
 
@@ -162,9 +164,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#2C2C2C"
+                android:backgroundTint="@color/colorButtons"
                 android:text="Confirmar"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
         </LinearLayout>
 
 
@@ -174,11 +176,13 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#2C2C2C"
-        app:itemIconTint="@color/nav_item_colors"
+        android:background="@color/banner"
+        app:itemIconSize="24dp"
         app:itemTextColor="@color/nav_item_colors"
-        app:menu="@menu/bottom_nav_menu2" />
+        app:itemIconTint="@color/nav_item_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

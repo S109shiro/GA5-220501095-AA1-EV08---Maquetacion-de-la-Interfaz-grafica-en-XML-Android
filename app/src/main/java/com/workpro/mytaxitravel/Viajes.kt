@@ -1,35 +1,48 @@
 package com.workpro.mytaxitravel
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.workpro.mytaxitravel.databinding.ActivityViajesBinding
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
 
 class Viajes : AppCompatActivity() {
-
-    private lateinit var binding: ActivityViajesBinding
-
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_viajes)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+        // Obtenemos el nav
+        val navView = findViewById<BottomNavigationView>(R.id.nav_view)
+        // Seleccionamos el botón a sostener
+        navView.selectedItemId = R.id.navigation_travel
 
-        binding = ActivityViajesBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        navView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
 
-        val navView: BottomNavigationView = binding.navView
+                R.id.navigation_home -> {
+                    startActivity(Intent(this, Home::class.java))
+                    true
+                }
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_viajes)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+                R.id.navigation_travel -> true
+
+                R.id.navigation_user -> {
+                    startActivity(Intent(this, Usuario::class.java))
+                    true
+                }
+
+                else -> false
+            }
+        }
     }
 }

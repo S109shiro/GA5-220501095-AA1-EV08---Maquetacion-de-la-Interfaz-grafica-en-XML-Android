@@ -83,7 +83,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/buttonLBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30px"
@@ -93,7 +93,7 @@
                 android:textColor="#000000" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/buttonLNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

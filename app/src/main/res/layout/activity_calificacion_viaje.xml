@@ -174,7 +174,7 @@
         android:background="#2C2C2C"
         app:itemIconTint="@color/nav_item_colors"
         app:itemTextColor="@color/nav_item_colors"
-        app:menu="@menu/bottom_nav_menu2"
+        app:menu="@menu/bottom_nav_menu"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="856dp" />
 
