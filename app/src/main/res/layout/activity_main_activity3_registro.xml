@@ -1,123 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity3_Registro">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="411dp"
-        android:layout_height="933dp"
-        android:contentDescription="Icon aplication"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/as"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-3dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/descriptionImgApp"
+        app:srcCompat="@drawable/car_front_view_62662"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <LinearLayout
-        android:layout_width="323dp"
-        android:layout_height="477dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/white"
-        android:gravity="center"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:paddingBottom="10dp"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="223dp"
-        tools:ignore="MissingConstraints">
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85">
 
         <EditText
-            android:id="@+id/editTextText4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Nombres"
-            android:inputType="text" />
+            android:hint="Nombres"/>
 
         <EditText
-            android:id="@+id/editTextText5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Apellidos"
-            android:inputType="text" />
+            android:hint="Apellidos"/>
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Correo Electronico"
-            android:inputType="textEmailAddress" />
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"/>
 
         <EditText
-            android:id="@+id/editTextText6"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Tipo de documento"
-            android:inputType="text" />
+            android:hint="Tipo de documento"/>
 
         <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Numero de documento"
-            android:inputType="number" />
+            android:hint="Número de documento"
+            android:inputType="number"/>
 
-        <ToggleButton
-            android:id="@+id/toggleButton"
-            android:layout_width="214dp"
+        <Button
+            android:id="@+id/btnUploadPdfDocument"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:text="Adjuntar documento (PDF)"
             android:backgroundTint="@color/colorButtons"
-            android:textColor="@color/white"
-            android:textOff="Adjuntar documento" />
+            android:textColor="@color/white"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonLBack"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnCancelRegister"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorSecondButtons"
-                android:text="Cancelar"
-                android:textColor="#000000" />
+                android:textColor="@color/black"
+                android:text="Cancelar" />
 
             <Button
-                android:id="@+id/buttonLNext"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnNextRegister"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorButtons"
-                android:text="Siguiente" />
+                android:textColor="@color/white"
+                android:text="Siguiente"/>
         </LinearLayout>
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="129dp"
-        android:layout_height="121dp"
-        android:contentDescription="@string/descriptionImgApp"
-        app:srcCompat="@drawable/car_front_view_62662"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="75dp"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

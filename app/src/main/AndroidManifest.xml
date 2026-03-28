@@ -23,10 +23,10 @@
             android:name=".calificacion_viaje"
             android:exported="false" />
         <activity
-            android:name=".olvide_contrasena2"
+            android:name=".OlvideContrasenaSecond"
             android:exported="false" />
         <activity
-            android:name=".olvide_contrasena1"
+            android:name=".OlvideContrasena"
             android:exported="false" />
         <activity
             android:name=".historialViajes"
@@ -49,10 +49,10 @@
             android:exported="false"
             android:label="@string/title_activity_hime" />
         <activity
-            android:name=".MainActivity4_registro2"
+            android:name=".RegistroSecond"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3_Registro"
+            android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".ActivityLogin"

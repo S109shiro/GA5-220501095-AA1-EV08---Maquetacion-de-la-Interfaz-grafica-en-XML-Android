@@ -1,12 +1,16 @@
 package com.workpro.mytaxitravel
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.Button
 
-class MainActivity4_registro2 : AppCompatActivity() {
+class RegistroSecond : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -15,6 +19,19 @@ class MainActivity4_registro2 : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val btnBack = findViewById<Button>(R.id.btnBackRegister)
+        val btnRegister = findViewById<Button>(R.id.btnRegister)
+
+        btnBack.setOnClickListener {
+            val call = Intent(this, Registro::class.java)
+            startActivity(call)
+        }
+
+        btnRegister.setOnClickListener {
+            val call = Intent(this, Home::class.java)
+            startActivity(call)
+            finishAffinity()
         }
     }
 }
