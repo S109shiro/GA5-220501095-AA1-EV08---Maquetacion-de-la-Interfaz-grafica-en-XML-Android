@@ -20,7 +20,7 @@
             android:name=".configuracion_perfil"
             android:exported="false" />
         <activity
-            android:name=".calificacion_viaje"
+            android:name=".CalificacionViaje"
             android:exported="false" />
         <activity
             android:name=".OlvideContrasenaSecond"
@@ -33,7 +33,7 @@
             android:exported="false"
             android:label="@string/title_activity_historial_viajes" />
         <activity
-            android:name=".viajeRealizado"
+            android:name=".ViajeProceso"
             android:exported="false"
             android:label="@string/title_activity_viaje_realizado" />
         <activity
