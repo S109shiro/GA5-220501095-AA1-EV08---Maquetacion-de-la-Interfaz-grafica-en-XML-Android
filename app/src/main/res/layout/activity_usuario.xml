@@ -103,7 +103,9 @@
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:clickable="true"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:descendantFocusability="blocksDescendants">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -132,7 +134,9 @@
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:clickable="true"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:descendantFocusability="blocksDescendants">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -190,7 +194,9 @@
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:clickable="true"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:descendantFocusability="blocksDescendants">
 
                     <ImageView
                         android:layout_width="24dp"

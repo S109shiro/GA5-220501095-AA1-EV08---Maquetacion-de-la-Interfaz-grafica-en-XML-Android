@@ -8,4 +8,5 @@
     <color name="colorSecondButtons">#F2EEEE</color>
     <color name="white">#FFFFFFFF</color>
     <color name="fontInputText">#F2EAFB</color>
+    <color name="colorIconos">#888888</color>
 </resources>

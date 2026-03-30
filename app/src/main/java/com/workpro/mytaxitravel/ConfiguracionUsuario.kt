@@ -1,6 +1,5 @@
 package com.workpro.mytaxitravel
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -10,12 +9,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class Usuario : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class ConfiguracionUsuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_usuario)
+        setContentView(R.layout.activity_configuracion_perfil)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -45,30 +43,9 @@ class Usuario : AppCompatActivity() {
             }
         }
 
-        // Logica boton de configuracion Usuario
-        val btnConfig = findViewById<LinearLayout>(R.id.btnConfig).setOnClickListener {
-            val call = Intent(this, ConfiguracionUsuario::class.java)
+        val btnReturn = findViewById<LinearLayout>(R.id.btnBackConfig).setOnClickListener {
+            val call = Intent(this, Usuario::class.java)
             startActivity(call)
-        }
-
-        // Logica para boton de historial de viajes
-        val btnHistory = findViewById<LinearLayout>(R.id.btnHistoryTravels).setOnClickListener {
-            val call = Intent(this, HistorialViajes::class.java)
-            startActivity(call)
-        }
-
-        // Logica para el boton de soporte
-        val btnHelp = findViewById<LinearLayout>(R.id.btnSoporte).setOnClickListener {
-            val call = Intent(this, SoporteUsuario::class.java)
-            startActivity(call)
-        }
-
-        // Logica boton de salir de la cuenta
-        val btnLogOut = findViewById<LinearLayout>(R.id.btnLogout).setOnClickListener {
-            val call = Intent(this, MainActivity::class.java)
-            startActivity(call)
-            finishAffinity()
         }
     }
-
 }
